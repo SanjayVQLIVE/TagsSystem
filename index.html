@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Get Tags</title>
+	<style>
+		label {
+			font-size: 24px;
+			font-family: Roboto;
+		}
+		input[type=button] {
+			font-size: 18px;
+			border: none;
+			color: #fff;
+			padding: 0.6em 1.5em;
+			border-radius: 2em;
+			background: #ff4040;
+			cursor: pointer;
+			outline: none;
+			margin-left: 0.5em;
+		}
+		input[type=text] {
+			font-size: 1.4em;
+			padding: 0.4em 1em;
+			outline: none;
+			border: 2px solid #c2c2c2;
+			transition: all 150ms ease-in-out;
+			border-radius: 10em;
+		}
+		input[type=text]:focus {
+			border-color: #0095ff;
+		}
+		.tags {
+			list-style: none;
+			background: #03A9F4;
+			color: #fff;
+			font-family: Roboto, sans-serif;
+			padding: 0.5em 1em;
+			border-radius: 10em;
+			text-align: center;
+			display: inline;
+			font-size: 14px;
+			margin-left: 0.5em;
+		}
+		.removeTag {
+			color: #fff;
+			display: inline;
+			cursor: pointer;
+		}
+		.hasError {
+			border-color: #ff0023 !important;
+		}
+	</style>
+</head>
+<body>
+	<label for="tags">Tags: </label>
+	<input type="text" id="tagsField">&nbsp;
+	<input type="button" value="Get Tags" id="getTags">
+	<br>
+	<br>
+	<ul id="ul"></ul>
+	<script src="script.js"></script>
+</body>
+</html>
